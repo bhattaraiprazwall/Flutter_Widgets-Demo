@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/bottomsheet.dart';
+import 'package:flutter_widgets/animated_text.dart';
+// import 'package:flutter_widgets/bottomsheet.dart';
 // import 'package:flutter_widgets/dismissible.dart';
 // import 'package:flutter_widgets/drawer.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const Bottomsheet(),
+      home: const AnimatedText(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,primaryColor: Colors.yellow,

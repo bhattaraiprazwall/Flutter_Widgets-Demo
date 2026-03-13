@@ -27,9 +27,7 @@ class Bottomsheet extends StatelessWidget {
                   children: [
                     ListTile(title: Text('Orange'), subtitle: Text('Prajwal')),
                     ListTile(title: Text('Pineapple'), subtitle: Text('Roshan')),
-
                     ListTile(title: Text('Mango'), subtitle: Text('Rohan')),
-
                     ListTile(title: Text('Egg'), subtitle: Text('Akshit')),
                   ],
                 );

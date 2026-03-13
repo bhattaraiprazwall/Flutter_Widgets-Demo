@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/dismissible.dart';
+import 'package:flutter_widgets/bottomsheet.dart';
+// import 'package:flutter_widgets/dismissible.dart';
 // import 'package:flutter_widgets/drawer.dart';
 
 void main() {
@@ -11,11 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const DismissibleWidget(),
+      home: const Bottomsheet(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,primaryColor: Colors.deepPurple,
+        brightness: Brightness.light,primaryColor: Colors.yellow,
+        textTheme: TextTheme(
+          titleMedium: TextStyle(fontWeight: FontWeight.bold)
+        )
       ),
+      
     );
   }
 }

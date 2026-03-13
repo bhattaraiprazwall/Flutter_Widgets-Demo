@@ -19,7 +19,10 @@ class AnimatedText extends StatelessWidget {
               animatedTexts: [
                 TypewriterAnimatedText(
                   'Prajwal Bhattarai',
-                  textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                  textStyle: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
                   speed: Duration(milliseconds: 200),
                 ),
               ],
@@ -32,14 +35,22 @@ class AnimatedText extends StatelessWidget {
               animatedTexts: [
                 RotateAnimatedText('Hello'),
                 RotateAnimatedText('beautiful'),
-                RotateAnimatedText('world')
+                RotateAnimatedText('world'),
               ],
             ),
-            AnimatedTextKit(animatedTexts: 
-            [
-              WavyAnimatedText('hello',textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 30))
-            ])
-            
+            AnimatedTextKit(
+              animatedTexts: [
+                WavyAnimatedText(
+                  'hello',
+                  textStyle: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
+                ),
+              ],
+            ),
+
+            TextLiquidFill(text: 'Hello',),
           ],
         ),
       ),

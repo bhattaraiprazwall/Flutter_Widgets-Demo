@@ -140,9 +140,7 @@ class _FacebookLoginCloneState extends State<FacebookLoginClone> {
                         return null;
                       },
                     ),
-
                     SizedBox(height: 20),
-
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(

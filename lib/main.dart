@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_widgets/pages/facebook_login_clone.dart';
-import 'package:flutter_widgets/pages/form.dart';
+// import 'package:flutter_widgets/widgets/form.dart';
+import 'package:flutter_widgets/widgets/stack.dart';
 // import 'package:flutter_widgets/widgets/dropdown.dart';
 // import 'package:flutter_widgets/widgets/animated_text.dart';
 // import 'package:flutter_widgets/widgets/dropdown.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const FormWidget(),
+      home: const StackWidget(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,primaryColor: Colors.blue,

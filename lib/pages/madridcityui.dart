@@ -22,24 +22,49 @@ class _MadridcityuiState extends State<Madridcityui> {
                 Positioned(
                   child: Container(
                     height: 400,
-                    color: Colors.red,
+                    // color: Colors.red,
                     child: Stack(
                       children: [
                         Positioned(
-                          child: Container(height: 350,decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage(
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrU6E_cCSIohOzjXAbckDMQwcYnvkIU-sWA&s',
+                          child: Container(
+                            height: 350,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrU6E_cCSIohOzjXAbckDMQwcYnvkIU-sWA&s',
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),),
+                        Positioned(
+                          top: 50,
+                          left: 20,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.arrow_back),
+                            color: Colors.white,
+                          ),
+                        ),
+                         Positioned(
+                          right: 20,
+                          top: 50,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.favorite_border_rounded),
+                            color: Colors.white,
+                          ),
                         ),
                         Positioned(
                           bottom: 0,
                           right: 30,
                           child: CircleAvatar(
-                            backgroundColor: Colors.black,
+                            backgroundImage: NetworkImage(
+                              'https://img.freepik.com/free-photo/close-up-portrait-curly-handsome-european-male_176532-8133.jpg?semt=ais_hybrid&w=740&q=80',
+                            ),
+
+                            // backgroundColor: Colors.black,
                             radius: 50,
                           ),
                         ),
@@ -50,7 +75,8 @@ class _MadridcityuiState extends State<Madridcityui> {
               ],
             ),
             Container(
-              color: Colors.blue,
+              padding: EdgeInsets.all(20),
+              // color: Colors.blue,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -64,7 +90,7 @@ class _MadridcityuiState extends State<Madridcityui> {
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                       fontSize: 15,
-                      color: Colors.grey.shade200,
+                      color: Colors.black,
                     ),
                   ),
                 ],
@@ -72,6 +98,7 @@ class _MadridcityuiState extends State<Madridcityui> {
             ),
 
             Container(
+              padding: EdgeInsets.all(10),
               height: 50,
               child: Row(
                 mainAxisAlignment: .spaceEvenly,
@@ -85,10 +112,12 @@ class _MadridcityuiState extends State<Madridcityui> {
               ),
             ),
             Divider(),
-            Container(
-              padding: EdgeInsets.all(10),
-              child: Text(
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                ),
               ),
             ),
           ],

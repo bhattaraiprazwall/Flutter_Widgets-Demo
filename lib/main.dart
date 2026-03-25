@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/pages/madridcityui.dart';
+import 'package:flutter_widgets/pages/insta_profile_page.dart';
+// import 'package:flutter_widgets/pages/madridcityui.dart';
 // import 'package:flutter_widgets/widgets/geolocatorwidget.dart';
 // import 'package:flutter_widgets/widgets/imagepicker.dart';
 // import 'package:flutter_widgets/pages/facebook_login_clone.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home:  Madridcityui(),
+      home:  InstaProfilePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,primaryColor: Colors.blue,

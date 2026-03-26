@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991683382837",
+    "project_id": "instagram-clone-9099f",
+    "storage_bucket": "instagram-clone-9099f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991683382837:android:036b46e0ba0008c437eb7c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_widgets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSa4T42JUJ8VuIk5xD1mVkHGZpMLoIyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

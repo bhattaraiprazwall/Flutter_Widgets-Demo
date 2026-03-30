@@ -1,4 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:logger/logger.dart';
+
+   var logger = Logger();
 
 signup(String emailAddress, String password) async {
   try {
@@ -31,7 +34,8 @@ login(String emailAddress,String password) async {
   if (e.code == 'user-not-found') {
     print('No user found for that email.');
   } else if (e.code == 'wrong-password') {
-    print('Wrong password provided for that user.');
+ 
+    logger.d('Wrong password provided for that user.');
   }
 }
 }

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/functions/authfunctions.dart';
 
@@ -21,8 +22,10 @@ class _FirebaseEmailPassAuthenticationState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: Text(
           'Email Pass Authentication',
+          
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w400),
         ),
         centerTitle: true,

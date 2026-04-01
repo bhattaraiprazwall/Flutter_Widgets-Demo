@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_widgets/functions/db_functions.dart';
+import 'package:logger/logger.dart';
 
 class DatabaseOptions extends StatefulWidget {
   const DatabaseOptions({super.key});
@@ -9,6 +12,8 @@ class DatabaseOptions extends StatefulWidget {
 }
 
 class _DatabaseOptionsState extends State<DatabaseOptions> {
+  var log = Logger(
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +32,13 @@ class _DatabaseOptionsState extends State<DatabaseOptions> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomButton(title: 'Create', onPressed: () {}),
+            CustomButton(
+              onPressed: () {
+                create('pet', 'jimmy', 'tommy', 'cat', 5);
+                log.d('Button clicked');
+              },
+              title: 'Create',
+            ),
             CustomButton(onPressed: () {}, title: ('Update')),
             CustomButton(onPressed: () {}, title: ('Retrieve')),
             CustomButton(onPressed: () {}, title: ('Delete')),

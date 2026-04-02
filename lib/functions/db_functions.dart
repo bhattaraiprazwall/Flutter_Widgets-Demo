@@ -23,16 +23,37 @@ var logger = Logger();
 //   }
 // }
 
-
 // dynamic
-create (String collection,doc,name,animal,int age) async{
-  try{
-    await FirebaseFirestore.instance.collection(collection).doc(doc).set({'name':name,'animal':animal,'age':age});
-          logger.d('Record Created');
-
-  }
-  catch(e)
-  {
+Future<void> create(String collection, doc, name, animal, int age) async {
+  try {
+    await FirebaseFirestore.instance.collection(collection).doc(doc).set({
+      'name': name,
+      'animal': animal,
+      'age': age,
+    });
+    logger.d('Record Created');
+  } catch (e) {
     logger.e('Error:$e');
   }
+}
+
+Future<void> update(
+  String collection,
+  doc,
+  field,
+  Object? newFieldValue,
+) async {
+  try {
+    await FirebaseFirestore.instance.collection(collection).doc(doc).update({
+      field: newFieldValue,
+    });
+    logger.d('Record updated');
+  } catch (e) {
+    logger.e('Error:$e');
+  }
+}
+
+Future<void> delete(String collectionName,docName) async {
+  await FirebaseFirestore.instance.collection(collectionName).doc(docName).delete();
+  logger.d('Document Deleted');
 }
